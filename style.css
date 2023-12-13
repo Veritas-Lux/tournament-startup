@@ -1,0 +1,106 @@
+:root {
+    --crimson: #dc143c;
+    --white: #ffffff;
+    --navy-blue: #001f3f;
+}
+        body {
+            font-family: 'Cambria Math', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            background-color: var(--crimson);
+            color: var(--white);
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: var(--white);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+/* Style for the intro section */
+.intro-section {
+    background-color: var(--crimson);
+    color: var(--white);
+}
+
+/* Style for the highlight section */
+.highlight-section {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the guide section */
+.guide-section {
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the about section */
+.about-section {
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles as needed */
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+        h2 {
+            color: var(--crimson);
+        }
+    
+        /* Style for the navigation menu */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Style for the list items */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        /* Style for the anchor links */
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Change color on hover */
+        nav a:hover {
+            color: #ffcc00;
+        }
+   
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
