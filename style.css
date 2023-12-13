@@ -8,14 +8,14 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            line-height: 1.6;
+            line-height: 2;
             background-color: var(--crimson);
-            color: var(--white);
+            color: var(--navy-blue);
         }
 
         section {
             padding: 20px;
-            text-align: center;
+            text-align: left;
             background-color: var(--white);
             margin: 20px;
             border-radius: 10px;
