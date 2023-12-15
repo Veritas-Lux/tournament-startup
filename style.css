@@ -27,6 +27,9 @@
     text-align: center;
     background-color: var(--crimson);
     color: var(--white);
+       h2 {
+            color: var(--crimson);
+        }
 }
 
 /* Style for the highlight section */
@@ -36,7 +39,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     padding: 40px;
 }
 
