@@ -1,5 +1,5 @@
 :root {
-    --crimson: #dc143c;
+    --crimson: #66080D;
     --white: #ffffff;
     --navy-blue: #001f3f;
 }
@@ -11,6 +11,7 @@
             line-height: 2;
             background-color: var(--crimson);
             color: var(--navy-blue);
+            font-size: medium;
         }
 
         section {
@@ -23,6 +24,7 @@
         }
 /* Style for the intro section */
 .intro-section {
+    text-align: center;
     background-color: var(--crimson);
     color: var(--white);
 }
@@ -30,14 +32,27 @@
 /* Style for the highlight section */
 .highlight-section {
     background-color: var(--white);
-    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.text-container {
+    flex: 1;
+    color: var(--crimson); /* Set text color */
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive within its container */
 }
 
 /* Style for the guide section */
 .guide-section {
-    background-color: var(--white);
+    background-color: var(--navy-blue);
+    color: var(--white);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -53,7 +68,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Additional styles as needed */
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     
         /* Style for the navigation menu */
 nav {
-    background-color: #333;
+    background-color: var(--navy-blue);
     padding: 15px 0;
     text-align: center;
 }
@@ -113,7 +128,7 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: var(--navy-blue);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
@@ -133,7 +148,7 @@ a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--navy-blue);
     color: white;
     text-align: center;
     padding: 10px;
