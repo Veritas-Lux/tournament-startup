@@ -1,158 +1,179 @@
 :root {
-    --crimson: #66080D;
-    --white: #ffffff;
-    --navy-blue: #001f3f;
+	--crimson: #66080D;
+	--white: #ffffff;
+	--navy-blue: #001f3f;
 }
-        body {
-            font-family: 'Cambria Math', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            line-height: 2;
-            background-color: var(--crimson);
-            color: var(--navy-blue);
-            font-size: medium;
-        }
 
-        section {
-            padding: 20px;
-            text-align: left;
-            background-color: var(--white);
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-/* Style for the intro section */
-.intro-section {
-    text-align: center;
-    background-color: var(--crimson);
-    color: var(--white);
-       h2 {
-            color: var(--crimson);
-        }
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Cambria Math', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 2;
+	background-color: var(--crimson);
+	color: var(--navy-blue);
+	font-size: medium;
+}
+
+section {
+	padding: 20px;
+	text-align: left;
+	background-color: var(--white);
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the highlight section */
 .highlight-section {
-    background-color: var(--white);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    padding: 40px;
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
+  width: 70%; /* Set the initial width to 70% of the page */
+  margin-left: auto; /* Align with the right side of the screen */
+  transition: width 0.5s ease; /* Add a transition effect for smooth expansion */
 }
 
 .text-container {
-    flex: 1;
-    color: var(--crimson); /* Set text color */
+  flex: 1;
+  color: var(--crimson);
 }
 
+.image-container {
+  width: 0;
+  overflow: hidden;
+}
+
+section:hover {
+  width: 100%; /* Expand the entire section on hover */
+}
 .image-container img {
-    width: 100%; /* Make the image responsive within its container */
+  width: 100%;
+  /* Make the image responsive within its container */
 }
 
 /* Style for the guide section */
 .guide-section {
-    background-color: var(--navy-blue);
-    color: var(--white);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: var(--navy-blue);
+	color: var(--white);
+  h2 {
+	color: var(--white);
+}
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
+  width: 70%; /* Set the initial width to 70% of the page */
+  margin-right: auto; /* Align with the left side of the screen */
+  transition: width 0.5s ease; /* Add a transition effect for smooth expansion */
+
 }
 
 /* Style for the about section */
 .about-section {
-    background-color: var(--white);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: var(--white);
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
-
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;
-    
+	font-family: 'Open-Sans', sans-serif;
+  color: var(--white);
 }
 
-        h2 {
-            color: var(--crimson);
-        }
+h2 {
+	color: var(--crimson);
+}
     
         /* Style for the navigation menu */
 nav {
-    background-color: var(--navy-blue);
-    padding: 15px 0;
-    text-align: center;
+    position: sticky;
+	background-color: var(--navy-blue);
+	padding: 15px 0;
+	text-align: center;
+    z-index: 100;
+}
+.favicon {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin to separate from the text */
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 h1 {
-    color: var(--white);
-    margin: 0;
+	color: var(--white);
+	margin: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
 }
 
 li {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 a:hover {
-    color: #ffcc00;
+	color: #ffcc00;
 }
 
 /* Add this CSS to style the dropdown */
 .dropdown {
-    display: inline-block;
+	display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--navy-blue);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+	display: none;
+	position: absolute;
+	background-color: var(--navy-blue);
+	box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #555;
+	background-color: #555;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+	display: block;
 }
 
 footer {
-    background-color: var(--navy-blue);
-    color: white;
-    text-align: center;
-    padding: 10px;
+	background-color: var(--navy-blue);
+	color: white;
+	text-align: center;
+	padding: 10px;
 }
